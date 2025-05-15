@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B5grMUFWQII=",
+  "dgSpecHash": "wWq636AavMA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LMNes\\Documents\\biblio\\BibliotecaVMC\\BibliotecaVMC.csproj",
+  "projectFilePath": "C:\\Users\\LMNes\\source\\repos\\lmnes\\biblioteca\\BibliotecaVMC\\BibliotecaVMC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LMNes\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\LMNes\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
