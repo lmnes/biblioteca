@@ -1,0 +1,41 @@
+﻿@model BibliotecaVMC.Models.Livro
+
+@{
+    ViewData["Title"] = "Editar Livro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Editar Livro</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Titulo" class="control-label"></label>
+        <input asp-for="Titulo" class="form-control" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Autor" class="control-label"></label>
+        <input asp-for="Autor" class="form-control" />
+        <span asp-validation-for="Autor" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Categoria" class="control-label"></label>
+        <input asp-for="Categoria" class="form-control" />
+        <span asp-validation-for="Categoria" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AnoPublicacao" class="control-label"></label>
+        <input asp-for="AnoPublicacao" class="form-control" />
+        <span asp-validation-for="AnoPublicacao" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Salvar</button>
+        <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+    </div>
+</form>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

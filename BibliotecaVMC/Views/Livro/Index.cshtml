@@ -1,0 +1,71 @@
+﻿@model IEnumerable<BibliotecaVMC.Models.Livro>
+
+@{
+    ViewData["Title"] = "Lista de Livros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de Livros</h1>
+
+<!-- Exibir mensagens de feedback -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        @TempData["ErrorMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Adicionar Novo Livro</a>
+</p>
+
+<!-- Formulário de busca -->
+<form asp-action="Index" method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="searchString" class="form-control" placeholder="Buscar por título, autor ou categoria..." value="@ViewData["CurrentFilter"]" />
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Categoria</th>
+            <th>Ano de Publicação</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var livro in Model)
+        {
+            <tr>
+                <td>@livro.Titulo</td>
+                <td>@livro.Autor</td>
+                <td>@livro.Categoria</td>
+                <td>@livro.AnoPublicacao</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@livro.Id" class="btn btn-sm btn-warning">Editar</a>
+                    <a asp-action="Details" asp-route-id="@livro.Id" class="btn btn-sm btn-info">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@livro.Id" class="btn btn-sm btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
