@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BibliotecaVMC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+226688503baa911a8f5f06ad1596b8f421dcdd1d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BibliotecaVMC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BibliotecaVMC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

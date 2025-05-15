@@ -6442,11 +6442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LMNes\\Documents\\biblio\\BibliotecaVMC\\BibliotecaVMC.csproj",
+      "projectUniqueName": "C:\\Users\\LMNes\\source\\repos\\lmnes\\biblioteca\\BibliotecaVMC\\BibliotecaVMC.csproj",
       "projectName": "BibliotecaVMC",
-      "projectPath": "C:\\Users\\LMNes\\Documents\\biblio\\BibliotecaVMC\\BibliotecaVMC.csproj",
+      "projectPath": "C:\\Users\\LMNes\\source\\repos\\lmnes\\biblioteca\\BibliotecaVMC\\BibliotecaVMC.csproj",
       "packagesPath": "C:\\Users\\LMNes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LMNes\\Documents\\biblio\\BibliotecaVMC\\obj\\",
+      "outputPath": "C:\\Users\\LMNes\\source\\repos\\lmnes\\biblioteca\\BibliotecaVMC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
